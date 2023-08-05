@@ -1,0 +1,67 @@
+for relative units we have: vw,vh, %, rem, em
+
+% percentage
+------------
+
+- if % is used with font-size it will take its value as a percent from
+    the parent computed font-size.
+- if % is used with width it will take its value as percent from
+    the parent computed width.
+
+font based units (em , rem):
+----------------------------
+
+- em: use parent as reference. (differ in lengths, in fonts)
+    - fonts: use parent computed font-size as reference.
+    - lengths: use current element computed font-size as reference . 
+- rem: use the root element font-size as reference (always)
+
+viewport based units (vh, vw):
+------------------------------
+
+- simply a percent of the viewport width or height.
+
+NOTES:
+------
+
+- each property has an initial value, used if nothing is declared .
+- browsers specify a root font-size for each page (usually 16px).
+- percentages and relative values are always converted to pixels.
+
+- inheritance notes:
+    - inheritance passes the values for some specific properties from parent to children.
+    - properties related to text are inherited: font-family, font-size, ....etc
+    - the computed value of a property is what gets inherited, not the declared value.
+    - inheritance of a property only works if no one declares a value for that property.
+    - the inherit keyword forces inheritance on a certain property.
+    - the initial keyword resets a property to its initial.
+
+- Visual Formatting model:
+    - Definition: Algorithm that calculates boxes and determines the layout of these boxes
+        for each element in the render tree, in order to determine the final layout of the page.
+
+- we set box-sizing property to border-box, the reason for that is by default the width and height
+    of an element does not include border and padding, so setting box-sizing to border box 
+    will make the width and height of elements include padding and border.
+
+- Block level elements:
+    - elements formatted usually as blocks.
+    - 100% of parent's width.
+    - Vertically, one after another.
+    - Box model applied as showed.
+- Inline level elements:
+    - content is distributed in lines.
+    - occupies only content space.
+    - no line-breaks.
+    - no height and widths.
+    - padding and margins only horizontal (left and right).
+
+-Inline-Block element:
+    - a mix between block and inline elements.
+    - occupies only content space.
+    - no line-breaks.
+    - Box model applied as showed.
+
+- CSS Architecture BEM:
+    steps: THINK => BUILD => ARCHTICT
+    
