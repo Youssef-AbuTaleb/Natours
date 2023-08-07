@@ -11,7 +11,7 @@
     font-size: 1.6rem;
   }
   &:hover {
-    transform: translateY(-3px);
+    transform: translateX(-3px);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
 
     &::after {
@@ -21,7 +21,7 @@
   }
   &:active {
     transform: translateY(-1px);
-    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+    // box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
   }
   &::after {
     content: "";
@@ -47,5 +47,21 @@
   &--animated {
     animation: moveInBottom ease-out 0.75s;
     animation-fill-mode: forwards;
+  }
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: 1.6rem;
+    color: $primary-color;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $primary-color;
+    padding: 3px;
+  }
+  &:hover {
+  }
+  &:active {
   }
 }

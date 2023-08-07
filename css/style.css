@@ -39,6 +39,18 @@ body {
     opacity: 1;
     transform: translateY(0); } }
 
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -71,6 +83,31 @@ body {
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out; }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  display: inline-block;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s; }
+  .heading-secondary:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -82,15 +119,14 @@ body {
   font-size: 1.6rem; }
 
 .btn:hover {
-  transform: translateY(-3px);
+  transform: translateX(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
   .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
 
 .btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  transform: translateY(-1px); }
 
 .btn::after {
   content: "";
@@ -114,9 +150,16 @@ body {
   animation: moveInBottom ease-out 0.75s;
   animation-fill-mode: forwards; }
 
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: #55c57a;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #55c57a;
+  padding: 3px; }
+
 .row {
   max-width: 114rem;
-  background-color: #eee;
   margin: 0 auto; }
   .row:not(:last-of-type) {
     margin-bottom: 8rem; }
@@ -125,7 +168,6 @@ body {
     display: table;
     clear: both; }
   .row div[class^="col-"] {
-    background-color: orangered;
     float: left; }
     .row div[class^="col-"]:not(:last-of-type) {
       margin-right: 6rem; }
@@ -163,9 +205,6 @@ body {
     text-align: center; }
 
 .section-about {
-  z-index: -1;
-  position: relative;
-  top: -20vh;
   background-color: #f7f7f7;
   padding: 25rem 0;
-  color: red; }
+  margin-top: -20vh; }
