@@ -46,7 +46,6 @@ body {
     $primary-color-light,
     $primary-color-dark
   );
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   transition: all 0.2s;
@@ -58,13 +57,13 @@ body {
 }
 
 .heading-tertiary {
-  font-size: 1.6rem;
+  font-size: $default-font-size;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .paragraph {
-  font-size: 1.6rem;
+  font-size: $default-font-size;
   &:not(:last-child) {
     margin-bottom: 3rem;
   }
