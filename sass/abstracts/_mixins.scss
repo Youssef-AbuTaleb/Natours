@@ -29,25 +29,25 @@ $breakPoint argument choices:
 @mixin respond($breakPoint) {
   @if ($breakPoint == "phone") {
     // 600px
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       @content;
     }
   }
   @if ($breakPoint == "tab-port") {
     // 900px
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       @content;
     }
   }
   @if ($breakPoint == "tab-land") {
     // 1200px
-    @media (max-width: 75em) {
+    @media only screen and (max-width: 75em) {
       @content;
     }
   }
   @if ($breakPoint == "big-desktop") {
     // 1800px
-    @media (min-width: 112.5em) {
+    @media only screen and (min-width: 112.5em) {
       @content;
     }
   }
