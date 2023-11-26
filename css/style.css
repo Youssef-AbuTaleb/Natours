@@ -569,8 +569,8 @@ body {
       text-align: center; } }
   @media (max-width: 37.5em) {
     .popup__left {
-      width: 80%;
-      display: block;
+      width: 50%;
+      display: inline;
       margin: 0 auto;
       margin-top: 10px; } }
   .popup__img {

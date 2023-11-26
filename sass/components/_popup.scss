@@ -57,8 +57,8 @@
   }
   @include respond(phone) {
     &__left {
-      width: 80%;
-      display: block;
+      width: 50%;
+      display: inline;
       margin: 0 auto;
       margin-top: 10px;
     }
