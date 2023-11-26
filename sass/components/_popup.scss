@@ -23,6 +23,15 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.5s 0.2s;
+
+    @include respond(tab-land) {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+    }
+    @include respond(tab-port) {
+      width: 95%;
+    }
   }
 
   &__left {
@@ -35,6 +44,26 @@
     vertical-align: middle;
     padding: 3rem 5rem;
   }
+
+  @include respond(tab-land) {
+    &__left {
+      width: 50%;
+      display: flex;
+    }
+    &__right {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  @include respond(phone) {
+    &__left {
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+  }
+
   &__img {
     display: block;
     width: 100%;
