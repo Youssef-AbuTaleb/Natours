@@ -14,3 +14,4 @@
 - BEM methodology.
 - (7-1) Folder structure.
 - Responsive Web Design (RWD) using media queries.
+- Animations.
